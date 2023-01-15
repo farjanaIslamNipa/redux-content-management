@@ -1,1 +1,18 @@
-export const LOAD_CONTENT = "LOAD_CONTENT";
+
+// USER ACTION TYPES
+export const LOAD_BLOGS = "LOAD_BLOGS";
+export const LAST_UPLOAD = "LAST_UPLOAD";
+export const FIRST_UPLOAD = "FIRST_UPLOAD";
+export const READING_HISTORY = "READING_HISTORY";
+export const TOGGLE_FIRST_UPLOAD = "TOGGLE_FIRST_UPLOAD";
+export const TOGGLE_LAST_UPLOAD = "TOGGLE_LAST_UPLOAD";
+export const CLEAR_FILTER = "CLEAR_FILTER";
+
+// ADMIN ACTION TYPES
+export const ADD_BLOG = "ADD_BLOG";
+export const EDIT_BLOG = "EDIT_BLOG";
+export const UPDATE_BLOG = "UPDATE_BLOG";
+export const REMOVE_BLOG = "REMOVE_BLOG";
+
+
+
