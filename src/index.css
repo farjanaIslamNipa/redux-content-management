@@ -11,6 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.text-500{
+  font-weight: 500;
+}
 .navbar-container{
   background-color: black;
 
@@ -23,4 +26,52 @@ code {
 }
 .brand-logo img{
   height: 100%;
+}
+
+.category-collage-section{
+  height: 415px;
+  width: 100% !important;
+}
+
+.management-img{
+  height: 100%;
+  width: 400px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.configure-img{
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.software-img{
+  height: 154px;
+  width: 100%;
+  object-fit: cover;
+}
+.category-name{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.configure-category{
+  bottom: 10px;
+}
+.filter-btn{
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 150px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+.filter-btn:hover{
+  background-color: black;
+  color: white;
+}
+.category-card:hover img{
+  transition: all 0.4s ease-in-out;
+  filter: brightness(0.7);
 }
