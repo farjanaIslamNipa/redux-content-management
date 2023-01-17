@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import BlogCard from '../component/BlogCard';
 import CategoryHeader from '../component/CategoryHeader';
 import { loadBlogsData } from '../redux/thunk/fetchBlogData';
 
@@ -25,11 +26,7 @@ useEffect(() => {
         <div className="row">
           {
             blogs && blogs.map((blog) => (
-              <div key={blog.id} className="col-md-4">
-              <div>
-                <h4>{blog.title}</h4>
-              </div>
-            </div>
+             <BlogCard key={blog.id} blog={blog} />
             ))
           }
         </div>

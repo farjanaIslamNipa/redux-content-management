@@ -75,3 +75,30 @@ code {
   transition: all 0.4s ease-in-out;
   filter: brightness(0.7);
 }
+.blog-card-img {
+  height: 200px;
+  width: 250px !important;
+}
+.blog-card-img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+
+}
+
+.read-more-btn{
+  border-bottom: 1px solid black;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+.read-more-btn:hover{
+  padding-left: 50px;
+  /* padding-right: 0 !important; */
+  color: black;
+}
+.category-header{
+  background-color: #f1f1f1;
+}

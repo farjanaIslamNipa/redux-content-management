@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom'
+import BlogCard from '../component/BlogCard';
 import { loadBlogsData } from '../redux/thunk/fetchBlogData';
 
 function Category() {
@@ -15,14 +16,17 @@ function Category() {
   }, [dispatch]);
 
    return (
-    <div>
-      {
-        blogCategory.map(blog => (
-          <div key={blog.id}>
-            <p>{blog.title}</p>
-          </div>
-        ))
-      }
+    <div className='container'>
+      <div className="mt-4 category-header p-3 mb-4">
+        <h3 className='text-capitalize text-center mb-0'>{name}</h3>
+      </div>
+      <div className='row pt-1'>
+        {
+          blogCategory.map(blog => (
+            <BlogCard key={blog.id} blog={blog} />
+          ))
+        }
+      </div>
     </div>
   )
 }
