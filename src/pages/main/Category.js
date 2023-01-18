@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom'
-import BlogCard from '../component/BlogCard';
-import { loadBlogsData } from '../redux/thunk/fetchBlogData';
+import BlogCard from '../../component/BlogCard';
+import { loadBlogsData } from '../../redux/thunk/fetchBlogData';
 
 function Category() {
   const {name} = useParams();

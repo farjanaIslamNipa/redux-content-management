@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import BlogCard from '../component/BlogCard';
-import CategoryHeader from '../component/CategoryHeader';
-import { loadBlogsData } from '../redux/thunk/fetchBlogData';
+import BlogCard from '../../component/BlogCard';
+import CategoryHeader from '../../component/CategoryHeader';
+import { loadBlogsData } from '../../redux/thunk/fetchBlogData';
 
 
 
