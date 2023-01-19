@@ -3,6 +3,7 @@ import Dashboard from "../layout/dashboard/Dashboard";
 import Main from "../layout/Main/Main";
 import AddPost from "../pages/dashboard/AddPost";
 import BlogList from "../pages/dashboard/BlogList";
+import EditPost from "../pages/dashboard/EditPost";
 import Category from "../pages/main/Category";
 import Home from "../pages/main/Home";
 
@@ -32,6 +33,10 @@ const routes = createBrowserRouter([
       {
         path: "add-post",
         element: <AddPost />
+      },
+      {
+        path: "edit-post/:id",
+        element: <EditPost />
       },
     ]
   }

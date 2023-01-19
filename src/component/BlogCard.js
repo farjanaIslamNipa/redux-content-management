@@ -8,7 +8,10 @@ function BlogCard({blog}) {
       <div className='single-blog-card d-flex w-100'>
         <div>
             <div className='blog-card-img'>
-                <img className='' src={image} alt={title} />
+              {
+                image ? <img className='' src={image} alt={title} /> : <img className='' src="https://i.ibb.co/QMzXG7m/img-1.jpg" alt={title} />
+              }
+                
             </div>
         </div>
         <div className='ps-2'>

@@ -1,7 +1,8 @@
-import { ADD_BLOG, LOAD_BLOGS } from "../actionTypes/actionTypes";
+import { ADD_BLOG, EDIT_BLOG, LOAD_BLOGS } from "../actionTypes/actionTypes";
 
 const initialState = {
   blogs: [],
+  blog: {},
   loading: true
 }
 
@@ -17,6 +18,11 @@ const blogReducer = (state = initialState, action) => {
       return{
         ...state,
         loading: false
+      }
+    case EDIT_BLOG:
+      return {
+        ...state,
+        blog: action.payload
       }
     default:
       return state;
