@@ -1,9 +1,10 @@
-import { ADD_BLOG, DELETE_BLOG, EDIT_BLOG, LOAD_BLOGS, UPDATE_BLOG } from "../actionTypes/actionTypes";
+import { ADD_BLOG, DELETE_BLOG, EDIT_BLOG, FIRST_UPLOAD, LAST_UPLOAD, LOAD_BLOGS, UPDATE_BLOG } from "../actionTypes/actionTypes";
 
 const initialState = {
   blogs: [],
   blog: {},
-  loading: true
+  loading: true,
+  lastUploads: []
 }
 
 const blogReducer = (state = initialState, action) => {
@@ -25,6 +26,16 @@ const blogReducer = (state = initialState, action) => {
       return {
         ...state,
         blog: action.payload
+      }
+    case LAST_UPLOAD:
+      return {
+        ...state,
+        blogs: state.blogs.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()).reverse()
+      }
+    case FIRST_UPLOAD:
+      return {
+        ...state,
+        blogs: state.blogs.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
       }
     default:
       return state;
