@@ -1,21 +1,22 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { useParams } from 'react-router-dom';
-import { editBlogData } from '../../redux/thunk/fetchBlogData';
+import { useNavigate, useParams } from 'react-router-dom';
+import { editBlogData, updateBlogData } from '../../redux/thunk/fetchBlogData';
 
 function EditPost() {
+    const {blog} = useSelector(state => state.blogData);
     const [formData, setFormData] = useState({
         title: '',
         description: '',
         tag:'',
         date: ''
     })
-    const {blog} = useSelector(state => state.blogData);
-    const {title, description, tag, date} = blog;
 
-    console.log(blog, 'blog data')
+    const {title, description, tag, date} = formData;
+
     const dispatch = useDispatch();
     let {id} = useParams();
+    const navigate = useNavigate();
 
     const handleInputChange = (e) => {
         const {name, value} = e.target
@@ -25,16 +26,27 @@ function EditPost() {
         })
     }
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log('clicked');
+        dispatch(updateBlogData(formData, id));
+        navigate('/dashboard')
+    }
+
     useEffect(() => {
         dispatch(editBlogData(id))
     }, [dispatch, id])
-    
+    useEffect(() => {
+        if(blog){
+            setFormData({...blog})
+        }
+    }, [blog])
   return (
     <div className='pt-4 ps-5'>
     <h4>Edit Post</h4>
     <div className='row'>
         <div className='col-md-8'>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <div className="form-group mb-3">
                     <label>Blog Title</label>
                     <input onChange={handleInputChange} name="title" type="text" className="form-control" value={title || ''}  />

@@ -1,4 +1,4 @@
-import { ADD_BLOG, EDIT_BLOG, LOAD_BLOGS } from "../actionTypes/actionTypes";
+import { ADD_BLOG, DELETE_BLOG, EDIT_BLOG, LOAD_BLOGS, UPDATE_BLOG } from "../actionTypes/actionTypes";
 
 const initialState = {
   blogs: [],
@@ -15,6 +15,8 @@ const blogReducer = (state = initialState, action) => {
         loading: false
       }
     case ADD_BLOG:
+    case UPDATE_BLOG:
+    case DELETE_BLOG:
       return{
         ...state,
         loading: false

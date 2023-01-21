@@ -2,11 +2,15 @@ import React from 'react'
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom';
-import { loadBlogsData } from '../../redux/thunk/fetchBlogData';
+import { deleteBlogData, loadBlogsData } from '../../redux/thunk/fetchBlogData';
 
 function BlogList() {
   const { blogs } = useSelector(state => state.blogData)
   const dispatch = useDispatch();
+
+  const handleDelete = (id) => {
+    dispatch(deleteBlogData(id))
+  }
 
   useEffect(() => {
     dispatch(loadBlogsData())
@@ -33,7 +37,7 @@ function BlogList() {
               <td>{blog.date}</td>
               <td>
                 <Link to={`edit-post/${blog.id}`} className='btn'><i class="fa-solid fa-pen"></i></Link>
-                <button className='btn'><i class="fa-solid fa-trash"></i></button>
+                <button onClick={() => handleDelete(blog.id)} className='btn'><i class="fa-solid fa-trash"></i></button>
               </td>
               </tr>
             ))

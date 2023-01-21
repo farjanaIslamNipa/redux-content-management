@@ -2,7 +2,7 @@
   "data": [
     {
       "id": 1,
-      "title": "An in-depth review of Hevo Data",
+      "title": "An in-depth review of Hevo Data ytutu tu",
       "description": "Hevo Data’s solutions help data teams not only streamline but also automate data flows across their organization. Hevo’s approach to data pipelines and ETL can result in hours of engineering time per week being saved, quicker reporting and analytics, and better data-driven decision-making. Hevo Data is an end-to-end, bi-directional, no-code data pipeline platform specifically designed for ELT, ETL and Reverse ETL projects. It enables data teams to pull data from all their data sources into warehouses, execute transformations for analytics and provide operational intelligence to business tools. Hevo users don’t need custom configurations in place, as Hevo’s data flow is codeless and automated out-of-the-box. It’s designed to simplify the way users manage future changes like the addition of new tables and columns and changing data types. Setting up a data pipeline with Hevo’s codeless approach takes just a handful of minutes. Hevo delivers a multi-tenant platform that leverages multiple components of the AWS cloud for its infrastructure. It’s tailored to process billions of records, and depending on business needs, Hevo is capable of automatically scaling up or down. Hevo also optimizes users’ returns on investment, since its architecture ensures that system resource utilization is constantly optimized. The platform offers an intuitive user interface that does away with the need for technical resources for setting up and managing customer data pipelines. It also streamlines analytics tasks through well-integrated data transformation features. Hevo supports more than 150 ready-to-use integrations for databases, cloud storage, streaming services and SDKs. Redshift and MySQL are popular databases that are compatible, while data warehouses such as BigQuery and Snowflake are also supported.",
       "date": "2023-01-07",
       "tag": "software",
@@ -79,13 +79,6 @@
       "slug": "configure",
       "status": true,
       "image": "https://i.ibb.co/80RdXH3/tr1523-configure-smtp-server-pasbolt.jpg"
-    },
-    {
-      "title": "First title",
-      "description": "description",
-      "tag": "software",
-      "date": "2023-01-20",
-      "id": 9
     }
   ]
 }

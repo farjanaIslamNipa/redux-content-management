@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import { addBlogData } from '../../redux/thunk/fetchBlogData';
 
 function AddPost() {
@@ -13,10 +14,12 @@ function AddPost() {
         let {name, value} = e.target;
         setFormData({...formData, [name]:value})
     }
+    const navigate = useNavigate();
     const dispatch = useDispatch()
     const handleSubmit = (e) => {
         e.preventDefault();
         dispatch(addBlogData(formData))
+        navigate('/dashboard')
     }
     return (
         <div className='pt-4 ps-5'>
