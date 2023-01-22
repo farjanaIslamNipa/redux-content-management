@@ -3,6 +3,7 @@
 export const LOAD_BLOGS = "LOAD_BLOGS";
 export const READING_HISTORY = "READING_HISTORY";
 export const CLEAR_FILTER = "CLEAR_FILTER";
+export const READ_MORE = "READ_MORE"
 
 // ADMIN ACTION TYPES
 export const ADD_BLOG = "ADD_BLOG";

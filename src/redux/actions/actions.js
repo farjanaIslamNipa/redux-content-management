@@ -1,4 +1,4 @@
-import { ADD_BLOG, CLEAR_FILTER, DELETE_BLOG, EDIT_BLOG, FIRST_UPLOAD, LAST_UPLOAD, LOAD_BLOGS, UPDATE_BLOG } from "../actionTypes/actionTypes"
+import { ADD_BLOG, CLEAR_FILTER, DELETE_BLOG, EDIT_BLOG, FIRST_UPLOAD, LAST_UPLOAD, LOAD_BLOGS, READING_HISTORY, READ_MORE, UPDATE_BLOG } from "../actionTypes/actionTypes"
 
 export const loadBlogs = (data) => {
   return {
@@ -45,5 +45,19 @@ export const firstUpload = () => {
 export const clearFilter = () => {
   return {
     type: CLEAR_FILTER
+  }
+}
+
+export const readMore = (data) => {
+  return {
+    type: READ_MORE,
+    payload: data
+  }
+}
+
+export const readingHistory = (data) => {
+  return {
+    type: READING_HISTORY,
+    payload: data
   }
 }

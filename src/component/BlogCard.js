@@ -1,8 +1,11 @@
 import React from 'react'
+import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { readingHistory } from '../redux/actions/actions';
 
 function BlogCard({blog}) {
-  const  {title, description, date, tag, image} = blog;
+  const  {title, description, date, image} = blog;
+  const dispatch = useDispatch();
   return (
     <div className='col-md-6 mb-4'>
       <div className='single-blog-card d-flex w-100'>
@@ -19,7 +22,8 @@ function BlogCard({blog}) {
             <div><small className='fw-bold text-muted'>Published at: {date}</small></div>
             <p className='mb-1'>{description.slice(0, 150)}...</p>
             
-            <Link className='read-more-btn pe-5' to="#">Read More</Link>
+            {/* <button className='read-more-btn pe-5'>Read More</button> */}
+            <Link onClick={() => dispatch(readingHistory(blog))} className='read-more-btn pe-5' to={`/blog/${blog.id}`}>Read More</Link>
         </div>
       </div>
     </div>

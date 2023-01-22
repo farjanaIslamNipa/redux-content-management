@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import BlogCard from '../../component/BlogCard';
 import CategoryHeader from '../../component/CategoryHeader';
@@ -10,10 +10,6 @@ import { loadBlogsData } from '../../redux/thunk/fetchBlogData';
 function Home() {
   const { blogs } = useSelector((state) => state.blogData);
   const dispatch = useDispatch();
-
-// const sorted_blogs = blogs.sort((a,b) => {
-//   return new Date(a.date).getTime() - new Date(b.date).getTime()
-// });
 
 useEffect(() => {
   dispatch(loadBlogsData())

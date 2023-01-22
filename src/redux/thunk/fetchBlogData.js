@@ -1,5 +1,5 @@
 import axios from "axios"
-import { addBlog, deleteBlog, editBlog, loadBlogs, updateBlog } from "../actions/actions"
+import { addBlog, deleteBlog, editBlog, loadBlogs, readMore, updateBlog } from "../actions/actions"
 
 export const loadBlogsData = () => {
   return async (dispatch) => {
@@ -43,6 +43,15 @@ export const deleteBlogData = (id) => {
     .then(res => {
       dispatch(deleteBlog());
       dispatch(loadBlogsData());
+    })
+  }
+}
+
+export const readMoreData = (id) => {
+  return async (dispatch) => {
+    axios.get(`${process.env.REACT_APP_API}/${id}`)
+    .then(res => {
+      dispatch(readMore(res.data))
     })
   }
 }
