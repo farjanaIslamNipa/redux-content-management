@@ -7,12 +7,12 @@ import configure from '../images/category/configure.jpg'
 function CategoryHeader() {
   return (
     <div>
-      <div className="d-flex category-collage-section w-100 mt-4 mb-4">
-        <Link to='/category/management' className='d-block category-card'>
+      <div className="d-md-flex d-block category-collage-section w-100 mt-4 mb-4">
+        <Link to='/category/management' className='d-block category-card mb-md-0 mb-2'>
           <div className='position-relative h-100'>
             <img className='management-img' src={management} alt="" />
             <div className='category-name'>
-              <h4 className='px-4 py-2 text-500'>Management</h4>
+              <h4 className='px-4 py-md-2 py-1 text-500'>Management</h4>
             </div>
           </div>
         </Link>
@@ -21,7 +21,7 @@ function CategoryHeader() {
             <div className='position-relative h-100'>
               <img className='configure-img' src={configure} alt="" />
               <div className='category-name configure-category'>
-                <h4 className='px-4 py-2 text-500'>Configure</h4>
+                <h4 className='px-4 py-md-2 py-1 text-500'>Configure</h4>
               </div>
             </div>
           </Link>
@@ -29,7 +29,7 @@ function CategoryHeader() {
             <div className='position-relative h-100'>
               <img className='software-img' src={software} alt="" />
               <div className='category-name'>
-                <h4 className='px-4 py-2 text-500'>Software</h4>
+                <h4 className='px-4 py-md-2 py-1 text-500'>Software</h4>
               </div>
             </div>
           </Link>

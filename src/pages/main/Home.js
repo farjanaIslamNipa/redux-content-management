@@ -11,7 +11,6 @@ function Home() {
   const { blogs } = useSelector((state) => state.blogData);
   const dispatch = useDispatch();
 
-
 useEffect(() => {
   dispatch(loadBlogsData())
 }, [dispatch]);
@@ -21,9 +20,9 @@ useEffect(() => {
     <div>
       <div className="container">
         <CategoryHeader />
-        <div className="text-center mb-5 pt-5">
-          <button onClick={() => dispatch(lastUpload())} className='btn filter-btn mx-4'>Last Upload</button>
-          <button onClick={() => dispatch(firstUpload())} className='btn filter-btn'>First Upload</button>
+        <div className="text-center mb-5 pt-lg-5 pt-4">
+          <button onClick={() => dispatch(lastUpload())} className='btn filter-btn'>Last Upload</button>
+          <button onClick={() => dispatch(firstUpload())} className='btn filter-btn mx-md-4 mx-2'>First Upload</button>
           <button onClick={() => dispatch(loadBlogsData())} className='btn filter-btn'>Clear Filter</button>
         </div>
         <div className="row">

@@ -112,3 +112,37 @@ a{
   height: 100vh;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
+
+.blog-img{
+  height: 300px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.blog-img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+
+@media(max-width:767px){
+  .management-img, .configure-img, .software-img {
+    height: 100px;
+    width: 100%;
+  }
+  .category-collage-section{
+    height: auto;
+  }
+  .category-name{
+    width: 100%;
+    text-align: center;
+  }
+  .category-name h4{
+    font-size: 18px;
+  }
+  .filter-btn{
+    width: 120px;
+  }
+}

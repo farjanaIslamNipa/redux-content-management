@@ -16,15 +16,9 @@ function Navbar() {
           <div className="collapse navbar-collapse ms-auto" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <Link className="nav-link" to="#">Reading History</Link>
+                <Link className="nav-link" to="/reading-history">Reading History</Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" aria-current="page" to="#">About</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="#">Contact</Link>
-              </li>
-              <li className="nav-item">
+              <li className="nav-item ms-4">
                 <Link className="nav-link" to="/dashboard">Dashboard</Link>
               </li>
             </ul>

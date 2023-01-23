@@ -6,6 +6,8 @@ import BlogList from "../pages/dashboard/BlogList";
 import EditPost from "../pages/dashboard/EditPost";
 import Category from "../pages/main/Category";
 import Home from "../pages/main/Home";
+import ReadingHistory from "../pages/main/ReadingHistory";
+import ReadMore from "../pages/main/ReadMore";
 
 const routes = createBrowserRouter([
   {
@@ -19,6 +21,14 @@ const routes = createBrowserRouter([
       {
         path: "/category/:name",
         element: <Category />
+      },
+      {
+        path: "/blog/:id",
+        element: <ReadMore />
+      },
+      {
+        path: "/reading-history",
+        element: <ReadingHistory />
       },
     ]
   },
