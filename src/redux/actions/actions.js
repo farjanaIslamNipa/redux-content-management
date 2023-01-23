@@ -42,8 +42,15 @@ export const firstUpload = () => {
     type: FIRST_UPLOAD
   }
 }
+
 export const clearFilter = () => {
   return {
     type: CLEAR_FILTER
+  }
+}
+
+export const readingHistory = () => {
+  return {
+    
   }
 }

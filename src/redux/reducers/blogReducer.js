@@ -4,7 +4,7 @@ const initialState = {
   blogs: [],
   blog: {},
   loading: true,
-  lastUploads: []
+  readingHistory: []
 }
 
 const blogReducer = (state = initialState, action) => {
