@@ -17,8 +17,13 @@ function BlogList() {
   }, [dispatch])
 
   return (
-    <div>
-      <h3>All Blogs</h3>
+    <div className='container-fluid px-5 pt-4'>
+      <div className='d-flex justify-content-between dashboard-header py-2 px-4 mb-4'>
+        <h4 className='mb-0'>All Blogs</h4>
+        <div>
+          <Link to="add-blog" className='dashboard-header-btn btn px-4'>Add Blog</Link>
+        </div>
+      </div>
       <table class="table">
         <thead>
           <tr>

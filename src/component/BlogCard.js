@@ -8,8 +8,8 @@ function BlogCard({blog}) {
   const dispatch = useDispatch();
   return (
     <div className='col-lg-6 mb-4'>
-      <div className='single-blog-card d-xl-flex d-lg-block w-100'>
-        <div>
+      <div className='single-blog-card d-xl-flex d-lg-block d-md-flex w-100'>
+        <div className='mb-xl-0 mb-2'>
             <div className='blog-card-img'>
               {
                 image ? <img className='' src={image} alt={title} /> : <img className='' src="https://i.ibb.co/QMzXG7m/img-1.jpg" alt={title} />
