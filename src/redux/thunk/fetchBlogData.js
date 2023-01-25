@@ -42,7 +42,7 @@ export const deleteBlogData = (id) => {
     axios.delete(`${process.env.REACT_APP_API}/${id}`)
     .then(res => {
       dispatch(deleteBlog());
-      dispatch(loadBlogsData());
+      dispatch(loadBlogsData())
     })
   }
 }

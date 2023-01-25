@@ -81,11 +81,18 @@
       "image": "https://i.ibb.co/80RdXH3/tr1523-configure-smtp-server-pasbolt.jpg"
     },
     {
-      "title": "new blog",
-      "description": "af;sf ds;lfdsjf dsf;ldskfjsdl;fsda;dlf safdsf",
-      "tag": "management",
-      "date": "2023-01-16",
-      "id": 9
+      "title": "MacBook Pro 2023 Review: You Should Probably Wait for OLED",
+      "description": "The review unit Apple sent us for this writeup wasn’t the highest available spec, but still high performing and expensive. We got the MacBook Pro 16 inch with a 12-core CPU, 19-core GPU M2 Pro chip, 32GB of RAM, and 2TB of storage. That’ll run you $3,500, but you can lower this model down to $2,700 or even $2,500 by dropping the amount of RAM and storage included with it.\n\nAlternatively, you can spend that $3,500 to get a 16 inch model with the 12-core CPU, 38-core GPU M2 Max chip. You’ll also get 32GB of RAM for that much, plus 1TB of storage. If you want to get a ludicrous 96GB of RAM and 8TB of storage, you’ll be spending $6,500.\n\nThe new M2 Pro and Max chips are also in 2023’s 14 inch MacBook Pros, which start at $2,000 for an M2 Pro with a 10-core CPU and 16-core GPU. The 14 inch MacBook Pros top out at $6,300 for an M2 Max chip with a 12 core CPU and 30-core GPU, plus 96GB of RAM and 8TB of storage. But you can also get a lower-specced M2 Max model starting at $3,100.\n\nAll configurations come with a variable refresh rate mini-LED “Liquid Retina XDR” display that’s capable of playing HDR content and hitting 120Hz. The display’s resolution is slightly sub-4K, at 3,456 x 2,234.\n\nIf all those numbers sound confusing to you, just know that you’ll probably be fine with 16 to 32GB of RAM, unless your work specifically demands more. Your storage needs will depend on how much you like to keep on your laptop vs the cloud or an external storage device. 1TB will likely serve most just fine.",
+      "tag": "software",
+      "date": "2023-01-26",
+      "id": 10
+    },
+    {
+      "title": "Lyft starts charging wait time fees to late passengers",
+      "description": "A court has blocked a rate hike that would have increased pay for New York City Uber and Lyft drivers. Uber sued the city's Taxi & Limousine Commission (TLC) in December, claiming it used a flawed methodology to determine the per-minute and per-mile rate increases. Manhattan state court Justice Arthur Engoron agreed. “It’s just not enough to say there’s inflation and 100 drivers said gas prices shot up,” Engoron, a former taxi driver in his college days, said, according to Bloomberg.\n\nIn November, the TLC unanimously approved the city's first metered fare increases in a decade, including for ridesharing trips. Per-minute rates were slated to go up by 7.4 percent and per-mile rates by 24 percent. Under those planned hikes, a trip of 7.5 miles that took 30 minutes would have earned a ridesharing driver at least $27.15, an increase of more than $2.50 compared with current rates.\n\nUber argued that the rate increases would result in higher fares for customers while harming its reputation. A judge granted a temporary restraining order to pause the rate hikes a few days after Uber filed suit and before they came into effect on December 19th.",
+      "tag": "software",
+      "date": "2023-01-25",
+      "id": 11
     }
   ]
 }

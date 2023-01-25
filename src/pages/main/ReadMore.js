@@ -15,7 +15,7 @@ function ReadMore() {
     }, [dispatch, id])
 
     return (
-        <div className='container pt-4'>
+        <div className='container pt-4 pb-5'>
             {image ?
                 <div className='blog-img text-center'>
                     <img src={image} alt="" />

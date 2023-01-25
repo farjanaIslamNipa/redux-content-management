@@ -23,10 +23,9 @@ function AddPost() {
     }
     return (
         <div className='container'>
-            <div className='py-4 px-5'>
-
+            <div className='py-5 px-lg-5 px-md-3 px-0'>
                 <div className='row justify-content-center mb-5'>
-                    <div className='col-md-8'>
+                    <div className='col-lg-8 col-md-10'>
                         <div className='d-flex justify-content-between dashboard-header py-2 px-4 mb-4'>
                             <h4 className='mb-0'>Add Blog</h4>
                             <div>

@@ -2,13 +2,14 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import BlogCard from '../../component/BlogCard';
 import CategoryHeader from '../../component/CategoryHeader';
+import DefaultLoader from '../../component/DefaultLoader';
 import { firstUpload, lastUpload } from '../../redux/actions/actions';
 import { loadBlogsData } from '../../redux/thunk/fetchBlogData';
 
 
 
 function Home() {
-  const { blogs } = useSelector((state) => state.blogData);
+  const { blogs, loading } = useSelector((state) => state.blogData);
   const dispatch = useDispatch();
 
 useEffect(() => {
@@ -25,12 +26,20 @@ useEffect(() => {
           <button onClick={() => dispatch(firstUpload())} className='btn filter-btn mx-md-4 mx-2'>First Upload</button>
           <button onClick={() => dispatch(loadBlogsData())} className='btn filter-btn'>Clear Filter</button>
         </div>
-        <div className="row">
+        <div>
           {
-            blogs && blogs.map((blog) => (
-             <BlogCard key={blog.id} blog={blog} />
-            ))
+            loading && <div className="position-relative pb-5 mb-5">
+            <DefaultLoader />
+          </div>
           }
+
+          <div className="row">
+            {
+              blogs && blogs.map((blog) => (
+               <BlogCard key={blog.id} blog={blog} />
+              ))
+            }
+          </div>
         </div>
       </div>
     </div>

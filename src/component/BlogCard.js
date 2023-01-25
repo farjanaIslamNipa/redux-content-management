@@ -2,6 +2,7 @@ import React from 'react'
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { readingHistory } from '../redux/actions/actions';
+import defaultImage from '../images/category/management-2.jpg'
 
 function BlogCard({blog}) {
   const  {title, description, date, image} = blog;
@@ -12,7 +13,7 @@ function BlogCard({blog}) {
         <div className='mb-xl-0 mb-2'>
             <div className='blog-card-img'>
               {
-                image ? <img className='' src={image} alt={title} /> : <img className='' src="https://i.ibb.co/QMzXG7m/img-1.jpg" alt={title} />
+                image ? <img className='' src={image} alt={title} /> : <img className='' src={defaultImage} alt={title} />
               }
                 
             </div>
