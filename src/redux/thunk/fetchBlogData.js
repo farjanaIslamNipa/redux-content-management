@@ -7,6 +7,9 @@ export const loadBlogsData = () => {
     .then(res => {
       dispatch(loadBlogs(res.data))
     })
+    .catch(err => {
+      console.log(err, 'error');
+    })
   }
 }
 
